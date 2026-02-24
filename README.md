@@ -9,7 +9,14 @@ More about Zellij plugins: [Zellij Documentation][docs]
 
 ## Development
 
-*Note*: you will need to have `wasm32-wasi` added to rust as a target to build the plugin. This can be done with `rustup target add wasm32-wasi`.
+*Note*: this repo builds to `wasm32-wasip1` by default (see `.cargo/config.toml`).
+
+### Nix + direnv
+
+Requires `direnv` + `nix-direnv`.
+
+1. `direnv allow`
+2. Or: `nix develop`
 
 ### With the Provided Layout
 
@@ -23,5 +30,5 @@ It can also be used if you prefer developing outside of the terminal - in this c
 ### Otherwise
 
 1. Build the project: `cargo build`
-2. Load it inside a running Zellij session: `zellij action start-or-reload-plugin file:target/wasm32-wasi/debug/rust-plugin-example.wasm`
+2. Load it inside a running Zellij session: `zellij action start-or-reload-plugin file:target/wasm32-wasip1/debug/rust-plugin-example.wasm`
 3. Repeat on changes (perhaps with a `watchexec` or similar command to run on fs changes).
