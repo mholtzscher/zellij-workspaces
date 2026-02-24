@@ -30,5 +30,5 @@ It can also be used if you prefer developing outside of the terminal - in this c
 ### Otherwise
 
 1. Build the project: `cargo build`
-2. Load it inside a running Zellij session: `zellij action start-or-reload-plugin file:target/wasm32-wasip1/debug/rust-plugin-example.wasm`
+2. Load it inside a running Zellij session: `zellij action start-or-reload-plugin file:target/wasm32-wasip1/debug/zellij-workspaces.wasm`
 3. Repeat on changes (perhaps with a `watchexec` or similar command to run on fs changes).

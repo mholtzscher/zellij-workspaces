@@ -1,6 +1,6 @@
 set dotenv-load := true
 
-crate := "rust-plugin-example"
+crate := "zellij-workspaces"
 wasm_target := "wasm32-wasip1"
 
 default:
